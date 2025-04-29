@@ -6,7 +6,7 @@ Creates a VPC or uses an existing one, with configurable subnets.
 ```hcl
 module "vpc" {
   source  = "app.terraform.io/tf-advanced-labs-demo3k/tuesday-network/aws"
-  version = "1.0.0"
+  version = "<module version>"
   app_prefix     = "myapp"
   cidr_block     = "10.0.0.0/16" # Optional: Defaults to 10.0.0.0/16
   subnet_count   = 3             # Optional: Defaults to 2
