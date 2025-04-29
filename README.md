@@ -1,0 +1,1 @@
+This module is to create a VPC and a subnet
