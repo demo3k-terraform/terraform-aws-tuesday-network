@@ -1,3 +1,5 @@
+@@  
+```markdown
 # Terraform VPC Module
 
 Creates a VPC or uses an existing one, with configurable subnets.
@@ -7,9 +9,9 @@ Creates a VPC or uses an existing one, with configurable subnets.
 module "vpc" {
   source         = "./path-to-module"
   app_prefix     = "myapp"
-  cidr_block     = "10.0.0.0/16"
-  subnet_count   = 3
-  existing_vpc_id = "" # Optional: Set to existing VPC ID to skip VPC creation
+  cidr_block     = "10.0.0.0/16" # Optional: Defaults to 10.0.0.0/16
+  subnet_count   = 3             # Optional: Defaults to 2
+  existing_vpc_id = ""           # Optional: Set to existing VPC ID to skip VPC creation
 }
 ```
 
